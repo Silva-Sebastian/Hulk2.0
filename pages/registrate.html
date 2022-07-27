@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registrate</title>
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Regitrate en la familia de Hulk Gym">
+        <meta name="keywords" content="GYM, ENTRENAR, CLASES, MUSCULACION">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="../css/pruebacss.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <header class="col-sm-12">
+                    <h1>Hulk Gym Mega</h1>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="video.html">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clases.html">Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrate.html">Registrate</a>
+                            </li>
+                        </ul>
+                    </header>
+                </nav>
+                <div class="log">
+                    <img class="logo img-fluid" src="../Img/logo1.png" alt="">
+                </div>
+            </div>
+
+            <form class="row g-3" id="reg">
+                <h2>Registrate</h2>
+                <h3>Forma parte de nuestra gran familia</h3>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputApellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido">
+                </div>
+                <div class="col-md-1">
+                    <label for="inputEdad" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="inputEdad">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputTel" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="inputTel">
+                </div>
+                <div class="col-md-7">
+                  <label for="inputState" class="form-label">Ciudad</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Elige una opcion...</option>
+                    <option>Grand Bourg</option>
+                    <option>Polvorines</option>
+                    <option>Tortugitas</option>
+                    <option>Don torcuato</option>
+                    <option>Tierras Altas</option>
+                    <option>Sourdeaux</option>
+                    <option>Pablo Nogues</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Codigo postal</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="row col-md-3" id="gen"> 
+                    <h4>Género:</h4>
+                        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                </div>
+
+                <div class="row">
+                    <div class="x">
+                        <h4>Clase a la que te gustaria inscribirte
+                        </h4>
+                        <label><input type="radio" name="clase" value="spinning">Spinning</label>
+                        <label><input type="radio" name="clase" value="ubound">Ubound</label>
+                        <label><input type="radio" name="clase" value="funcional">Funcional</label>
+                        <label><input type="radio" name="clase" value="kangoo">Kangoo</label>
+                    </div>
+                    <div class="x">
+                        <h4>Forma de pago</h4>
+                        <label><input type="radio" name="pago" value="t"> Tarjeta de credito o debito</label>
+                        <label><input type="radio" name="pago" value="mp"> Mercado Pago</label>
+                        <label><input type="radio" name="pago" value="e" > Efectivo</label>
+                    </div>
+                    <div class="y">
+                        <button type="submit" class="btn-registrate btn-primary">Registrate</button>
+                        <button type="reset" class="btn-cancela btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+              </form>
+
+              <footer class="pie row">
+                <p class="pie col-sm-12"> Fb:<a href="https://www.facebook.com/people/Hulk-Gym-Mega/100063590769656/">HulkGym</a> - Ig:<a href="https://www.instagram.com/hulkgymmegagimnasio/?hl=es">hulkgym</a>- Malvinas Argentinas</p>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

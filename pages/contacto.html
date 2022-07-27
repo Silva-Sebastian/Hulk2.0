@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Dejanos tus datos y que clase te interesa de Hulk Gym">
+        <meta name="keywords" content="GYM, ENTRENAR, CLASES, MUSCULACION">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="../css/pruebacss.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <header class="col-sm-12">
+                    <h1>Hulk Gym Mega</h1>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="video.html">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clases.html">Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrate.html">Registrate</a>
+                            </li>
+                        </ul>
+                    </header>
+                </nav>
+                <div class="log">
+                    <img class="logo img-fluid" src="../Img/logo1.png" alt="">
+                </div>
+            </div>
+
+            <main class="row">
+                <article id="artcont" class="col-lg-7 col-md-7 col-sm-12">
+                    <h2>Contacto</h2>
+                    <form id="formcont" action="" >
+                        <h3> Datos Personales</h3>
+                        <div class="form-group">
+                            <input class="form-control-sm" type="text" id="nombre" required />
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="form-group"> 
+                            <input class="form-control-sm" type="text" id="apellidos" />
+                            <label for="apellidos">Apellidos</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control-sm" type="email" id="email" required />
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control-sm" type="number" id="telefono"/>
+                            <label for="telefono">Telefono</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control-sm" type="text" id="hobbie" list="lista"/>
+                            <label for="hobbie">Hobbie</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control-sm" type="number"/>
+                            <label for="edad">Edad</label>
+                        </div>
+                        <div id="alineado">    
+                            <p>Género:
+                                <div class="form-group"></div>
+                                <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                                <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                            </p>
+                            
+                            <p>
+                                Dias en los que te gustaria entrenar
+                            </p>
+                            <label><input type="radio" name="dias" value="lmv"> Lunes, Miercoles y Viernes</label>
+                            <label><input type="radio" name="dias" value="mj"> Martes y Jueves</label>
+                            <label><input type="radio" name="dias" value="s"> Sabado</label>
+                            <p>Dias, horarios y medios por los que te podemos contactar</p>
+                            <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn-enviar btn-primary mb-3" type="submit" value="Enviar" >Enviar</button>
+                                <button class="btn-reset btn-secondary mb-3" type="reset" value="Restaurar">Restaurar</button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            
+
+            
+                <aside id="asidecont" class="col-lg-5 col-md-5 col-sm-12">
+                    <h2>Encontranos</h2>
+                    <iframe class="iframe-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105237.4740054039!2d-58.78560732392832!3d-34.48586791778773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbcb3a3e025cf%3A0xdb48b4e04de49110!2sMalvinas%20Argentinas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651173537334!5m2!1ses-419!2sar" width="100%" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="parrafo">
+                        <p>°Nuestra sucursal en Grand Bourg, se encuentra en Juan Francisco Segui 1586.</p>
+                        <p>°Tambien podes encontrarnos en Los Polvorines Juan Domigo Peron 3142.</p> 
+                        <p>°Y proximamente en Tortuguitas en Gauyana 140</p>
+                    </div>
+                </aside>   
+            </main>
+
+            <footer class="pie row">
+                <p class="pie col-sm-12"> Fb:<a href="https://www.facebook.com/people/Hulk-Gym-Mega/100063590769656/">HulkGym</a> - Ig:<a href="https://www.instagram.com/hulkgymmegagimnasio/?hl=es">hulkgym</a>- Malvinas Argentinas</p>
+            </footer>
+        </div>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

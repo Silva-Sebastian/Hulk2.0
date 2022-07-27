@@ -1,0 +1,117 @@
+body{
+    background-image: linear-gradient(rgb(87, 82, 82), rgb(11, 102, 17));
+}
+
+h1{
+    text-align: center;
+    font-size:500%;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.log{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2% 0%;
+}
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size:large;
+    margin-top: 5%;
+}
+
+#asideprin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    height: 80%;
+}
+
+#artprin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    height: 80%;
+}
+
+/*contacto*/
+
+#artcont{
+    display: flex;
+    flex-direction: column;
+}
+
+#formcont{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding-right: 40%;
+}
+
+#alineado{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 40%;
+}
+
+#asidecont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left:10%;
+}
+
+.iframe-fluid{
+    padding-top: 20%;
+    padding-bottom: 10%;
+    padding-left: 20;
+}
+
+/*clases*/
+
+.card-img-top{
+    height: 500px;
+}
+
+/*Registro*/
+
+#gen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.x{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30%;
+}
+.y{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2% 20%;
+}

@@ -1,0 +1,292 @@
+//codigo en comun//
+
+body{
+    background-image: linear-gradient(rgb(6, 15, 3), rgb(25, 124, 25));
+}
+
+h1{
+    color: rgb(204, 199, 192);
+    text-align: center;
+    font-size: 500%;
+    font-family:fantasy;
+}
+
+@for $i from 2 through 5 {
+    h#{$i}{
+        color: rgb(204, 199, 192);
+        text-align: center;
+        font-size: 500% / $i;
+    }
+}
+
+p{
+    font-weight: bold;
+    color: rgb(204, 199, 192);
+}
+
+li{
+    color: rgb(204, 199, 192);
+}
+
+label{
+    color: rgb(204, 199, 192);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+//mixin
+
+@mixin logito($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    @include logito(100%, 10%)
+}
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-weight: bolder;
+    font-size:large;
+    margin-top: 5%;
+    color: black;
+}
+
+//index//
+
+#artprin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    height: 80%;
+    p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+    }
+}
+
+.carousel-inner{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#f1{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#f2{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.lema{
+    li{
+        color: rgb(204, 199, 192);
+        font-weight: bold;
+        font-family:cursive;
+        &:hover{
+            font-size: 23px;
+            color: rgb(233, 129, 129);
+        }
+    }
+}
+
+#asideprin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    height: 80%;
+    p{
+        font-weight: bolder;
+    }
+}
+
+//map get
+$estilo:(
+    letra: rgb(22, 21, 21),
+    centro: center,
+    fondo: rgba(26, 71, 21, 0.5),
+);
+
+.detalle{
+    background-color: map-get($estilo, fondo);
+    color: map-get($estilo, letra);
+}
+
+//contacto
+
+#artcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#formcont{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 5;
+}
+
+#alineado{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#asidecont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.iframe-fluid{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+//extend
+
+.d-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0% 2% 10%
+}
+
+.dec {
+    border: 3px solid black;
+    width: 100px;
+    height: 50px;
+}
+
+.btn-enviar{
+    @extend .dec;
+    background-color: rgb(1, 102, 94);
+    font-weight: bold;
+    color: black;
+    border-radius: 15px
+}
+
+.btn-reset{
+    @extend .dec;
+    background-color: rgb(156, 0, 0);
+    font-weight: bold;
+    color: black;
+    border-radius: 15px
+}
+
+//video
+@for $i from 1 through 3 {
+    #v#{$i}{
+    height: 600px;
+    align-items: center;
+    background-color: rgb(47, 63, 45);
+    border: solid 2px black;
+    border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+    }
+}
+
+
+//clases
+@for $i from 1 through 4 {
+    #c#{$i}{
+    height: 100%;
+    align-items: center;
+    background-color: rgb(47, 63, 45);
+    border: solid 2px black;
+    border-radius: 10px;
+    }
+}
+
+.card-body{
+    background-image: linear-gradient(rgb(22, 21, 21), rgb(1, 46, 1));
+    h5{
+        color: black
+    };
+    p{
+        color: rgb(12, 3, 3);
+    };
+}
+
+.card-img-top{
+    width: 80%;
+    height: 350px;
+}
+
+//registro
+#reg{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#gen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.x{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30%;
+}
+.y{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2% 20%;
+}
+
+$decide:(
+    "registrate": rgb(24, 70, 100),
+    "cancela": rgb(151, 8, 8)
+);
+
+@each $name, $color in $decide {
+    .btn-#{$name}{
+        background-color:$color;
+    }
+}
+
+
+
+
+

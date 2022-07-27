@@ -1,0 +1,262 @@
+body {
+  background-image: linear-gradient(#060f03, #197c19); }
+
+h1 {
+  color: #ccc7c0;
+  text-align: center;
+  font-size: 500%;
+  font-family: fantasy; }
+
+h2 {
+  color: #ccc7c0;
+  text-align: center;
+  font-size: 250%; }
+
+h3 {
+  color: #ccc7c0;
+  text-align: center;
+  font-size: 166.66667%; }
+
+h4 {
+  color: #ccc7c0;
+  text-align: center;
+  font-size: 125%; }
+
+h5 {
+  color: #ccc7c0;
+  text-align: center;
+  font-size: 100%; }
+
+p {
+  font-weight: bold;
+  color: #ccc7c0; }
+
+li {
+  color: #ccc7c0; }
+
+label {
+  color: #ccc7c0; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.log {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%; }
+
+.pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-weight: bolder;
+  font-size: large;
+  margin-top: 5%;
+  color: black; }
+
+#artprin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  height: 80%; }
+  #artprin p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder; }
+
+.carousel-inner {
+  border: 3px solid black;
+  border-radius: 20px; }
+
+#f1 {
+  border: 3px solid black;
+  border-radius: 20px; }
+
+#f2 {
+  border: 3px solid black;
+  border-radius: 20px; }
+
+.lema li {
+  color: #ccc7c0;
+  font-weight: bold;
+  font-family: cursive; }
+  .lema li:hover {
+    font-size: 23px;
+    color: #e98181; }
+
+#asideprin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  height: 80%; }
+  #asideprin p {
+    font-weight: bolder; }
+
+.detalle {
+  background-color: rgba(26, 71, 21, 0.5);
+  color: #161515; }
+
+#artcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 20px; }
+
+#formcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5; }
+
+#alineado {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#asidecont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 3px solid black;
+  border-radius: 20px; }
+
+.iframe-fluid {
+  padding-top: 5%;
+  padding-bottom: 10%; }
+
+.d-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0% 2% 10%; }
+
+.dec, .btn-enviar, .btn-reset {
+  border: 3px solid black;
+  width: 100px;
+  height: 50px; }
+
+.btn-enviar {
+  background-color: #01665e;
+  font-weight: bold;
+  color: black;
+  border-radius: 15px; }
+
+.btn-reset {
+  background-color: #9c0000;
+  font-weight: bold;
+  color: black;
+  border-radius: 15px; }
+
+#v1 {
+  height: 600px;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+.card-body {
+  width: 100%; }
+
+#v2 {
+  height: 600px;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+.card-body {
+  width: 100%; }
+
+#v3 {
+  height: 600px;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+.card-body {
+  width: 100%; }
+
+#c1 {
+  height: 100%;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+#c2 {
+  height: 100%;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+#c3 {
+  height: 100%;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+#c4 {
+  height: 100%;
+  align-items: center;
+  background-color: #2f3f2d;
+  border: solid 2px black;
+  border-radius: 10px; }
+
+.card-body {
+  background-image: linear-gradient(#161515, #012e01); }
+  .card-body h5 {
+    color: black; }
+  .card-body p {
+    color: #0c0303; }
+
+.card-img-top {
+  width: 80%;
+  height: 350px; }
+
+#reg {
+  border: 3px solid black;
+  border-radius: 20px; }
+
+#gen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5%; }
+
+.x {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30%; }
+
+.y {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 2% 20%; }
+
+.btn-registrate {
+  background-color: #184664; }
+
+.btn-cancela {
+  background-color: #970808; }
