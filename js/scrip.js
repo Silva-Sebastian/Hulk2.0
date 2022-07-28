@@ -48,6 +48,34 @@ alert('si pagas con tarjeta el total seria de $' + precioT)
 
 let num = parseInt(prompt ('pone tu numero de cliente'))
 
+const produc = [
+    {
+        nombre: "2k",
+        precio: 6500
+
+    },
+    {
+        nombre: "1k",
+        precio: 3400
+
+    },
+    {
+        nombre: "500g",
+        precio: 1800
+
+    },
+    {
+        nombre: "250g",
+        precio: 1000
+
+    }
+]
+
+const resultado = produc.filter ((tama) => tama.nombre.includes("g"))
+console.log(resultado)
+
+//me gustaria que una ves que se inscriban al gym, se ejecute lo que sigue
+
 class cliente {
     constructor(nombre, edad){
         this.nombre = nombre.toUpperCase();
@@ -66,3 +94,4 @@ for (const refe of clientes){
     console.log(refe.nombre)
     console.log(refe.num)
 }
+
