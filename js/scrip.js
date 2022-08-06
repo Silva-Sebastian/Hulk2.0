@@ -22,10 +22,10 @@ if (edad >= 18) {
 
         if (clase == 'k'){
             precioT += dias * precioxdia
-            let precio1 = alert('el valor seria de $' + (dias * precioxdia))
+            alert('el valor seria de $' + (dias * precioxdia))
         }else if (clase == 'f'){
             precioT += dias * precioxdia
-            let precio2 = alert('el valor seria de $' + (dias * precioxdia))
+            alert('el valor seria de $' + (dias * precioxdia))
         
         } else {
             alert('no hay mas clases disponibles')
@@ -87,11 +87,12 @@ class cliente {
 const clientes = [];
 const id = []
 
-clientes.push(new cliente(nuevo, edad, num));
+clientes.push(new cliente(nombre, edad, num));
 
 
 for (const refe of clientes){
     console.log(refe.nombre)
+    console.log(refe.edad)
     console.log(refe.num)
 }
 
