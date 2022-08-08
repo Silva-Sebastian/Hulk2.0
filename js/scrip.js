@@ -24,7 +24,11 @@ function arranca (e){
 
 let precioT = 0
 
-let age = document.getElementById("inputNombre")
+
+//control de edad
+
+let mayor = document.getElementById("inputEdad")
+mayor.addEventListener("change", () => console.log(input.value))
 
 /*
 if (edad >= 18) {
