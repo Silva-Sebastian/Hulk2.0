@@ -1,14 +1,32 @@
-let nombre = prompt('ingresa tu nombre: ')
-console.log(nombre)
+let trai = document.getElementById("ent")
 
-let edad = prompt('ingresa tu edad: ')
-console.log(edad)
+let saludo = document.getElementById("reg");
 
-alert('bienvenido ' + nombre + ' tu edad es ' + edad)
+saludo.addEventListener ("submit", arranca);
+
+let flag = true;
+
+function arranca (e){
+    
+    e.preventDefault();
+
+    let fff = e.target
+
+    console.log(fff[2].value)
+    
+    
+    trai.innerText = "Hola " + fff[2].value + " vamos a entrenar"
+
+    document.body.append(sal)
+    console.log(e)
+                 
+}
 
 let precioT = 0
 
+let age = document.getElementById("inputNombre")
 
+/*
 if (edad >= 18) {
     alert('podes inscribirte')
     let cantClases = prompt('cuantas clases te interesan')
@@ -46,7 +64,7 @@ let precioEfectivo = desc(precioT)
 alert('si pagas en efectivo el total seria de $' + precioEfectivo)
 alert('si pagas con tarjeta el total seria de $' + precioT)
 
-let num = parseInt(prompt ('pone tu numero de cliente'))
+let num = parseInt(prompt ('pone tu numero de cliente'))*/
 
 const produc = [
     {
