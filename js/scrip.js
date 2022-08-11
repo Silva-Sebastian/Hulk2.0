@@ -19,8 +19,14 @@ function arranca (e){
 
     document.body.append(sal)
     console.log(e)
-                 
+    
+    
 }
+//me gustaria poder guardar la info del formulario Storage
+localStorage.setItem('nombre', 'sebas')
+let elNombre = localStorage.getItem('nombre')
+
+console.log(elNombre)
 
 let precioT = 0
 
